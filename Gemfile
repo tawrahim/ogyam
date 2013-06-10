@@ -5,6 +5,7 @@ gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'figaro'
+gem 'jquery-rails', '2.0.2'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
