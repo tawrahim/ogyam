@@ -1,0 +1,105 @@
+/* header fix for fix navbar */
+.header {
+  padding-top: 150px;
+}
+
+.header.page {
+  padding-top: 76px;
+}
+
+/* sign in / up wrapper */
+.sign-in-up {
+  margin: 50px auto;
+  max-width: 700px;
+}
+legend {
+  font-weight: 400;
+}
+
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { 
+  height: 45px;
+}
+
+.radio, .checkbox {
+  color: rgb(194, 194, 194);
+  font-size: 12px;
+}
+
+/* buttons */
+.btn-submit {
+  padding: 8px 23px;
+}
+
+.btn-border {
+  border: 1px solid rgb(39, 223, 157);
+  color: rgb(255, 255, 255);
+  background: rgb(39, 223, 157);
+  border-radius: 5px;
+
+  
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.btn-border:hover {
+  background: #fff; /* fix for browsers that do not support transparent background */
+  background: transparent;
+  color: rgb(39, 223, 157);
+}
+
+/* social icons sign in */
+.social-sign-in li {
+  margin: 10px 0;
+}
+
+.social-sign-in li a {
+  padding: 10px 40px;
+  font-size: 15px;
+}
+.btn-border.google-sign-in {
+  background: rgb(255, 103, 103);
+  border: 1px solid rgb(255, 103, 103);
+}
+
+.btn-border.google-sign-in:hover {
+  background: #fff; /* fix for browsers that do not support transparent background */
+  background: transparent; 
+  color: rgb(255, 103, 103);
+}
+
+.btn-border.facebook-sign-in {
+  background: rgb(0, 133, 255);
+  border: 1px solid rgb(0, 133, 255);
+}
+
+.btn-border.facebook-sign-in:hover {
+  background: #fff; /* fix for browsers that do not support transparent background */
+  background: transparent;
+  color: rgb(0, 133, 255);
+}
+
+.btn-border.twitter-sign-in {
+  background: rgb(0, 245, 255);
+  border: 1px solid rgb(0, 245, 255);
+}
+
+.btn-border.twitter-sign-in:hover {
+  background: #fff; /* fix for browsers that do not support transparent background */
+  background: transparent;
+  color: rgb(0, 245, 255);
+}
+
+/* sign up button */
+.btn-submit.sign-up {
+  background: rgb(71, 181, 255);
+  border-color: rgb(71, 181, 255);
+}
+
+.btn-submit.sign-up:hover {
+  background: #fff; /* fix for browsers that do not support transparent background */
+  background: transparent;
+  color: rgb(71, 181, 255);
+}

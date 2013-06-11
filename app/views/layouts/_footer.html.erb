@@ -1,0 +1,43 @@
+<footer id="footer" class="footer">
+<div class="container">
+  <div class="row-fluid">
+    <div class="span4">
+      <a class="pull-left footer-logo" href="<%= root_path %>">Ogyam</a>
+    </div>
+
+    <div class="span5">
+      <ul class="unstyled inline social-icons">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+        <li><a href="#"><i class="icon-twitter"></i></a></li>
+        <li><a href="#"><i class="icon-pinterest"></i></a></li>
+        <li><a href="#"><i class="icon-linkedin-sign"></i></a></li>
+        <li><a href="#"><i class="icon-google-plus"></i></a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="unstyled site-map">
+        <li> <%= link_to "Home", root_path%> </li>
+        <li> <%= link_to "Press Kit", '#'%> </li>
+        <li> <%= link_to "Blog", blog_path%> </li>
+        <li> <%= link_to "About", about_path%> </li>
+        <li> <%= link_to "Terms", terms_path %> </li>
+        <li> <%= link_to "Help", help_path %> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="contact-form-wrapper">
+        <span class="contact-btn closed">Contact Form</span>
+        <div class="contact-form-inner">
+          <form class="contact-form">
+            <fieldset>
+              <input class="input-block-level" type="text" name="name" placeholder="your name">
+              <input class="input-block-level" type="email" name="email" placeholder="your email">
+              <textarea class="input-block-level" rows="3" name="message" placeholder="your message"></textarea>
+              <button class="btn btn-success" type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+</footer>
+

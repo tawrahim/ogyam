@@ -1,0 +1,679 @@
+/*
+ * Author: Ogyam
+ * Author URL: http://www.ogyam.com
+ * All Right Reserved
+ */
+ 
+
+ 
+/*** Google Font **************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+/*** Reset Some Default Styles ************************************************/
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  }
+
+body {
+  font-family: lato;
+  font-size: 14px;
+  font-weight: 300;
+  color: #505050;
+}
+
+a {
+  color: rgb(50, 50, 50);
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  -ms-transition: color 300ms ease;
+  -o-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+a:hover, a:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+h1.entry-title, h2.entry-title, h3.entry-title, h4.entry-title, h5.entry-title, h6.entry-title {
+  margin: -11px 0 30px;
+}
+
+textarea, input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+  background-color: #fff; 
+  border: solid 1px #eee;
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.1); 
+  -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.1); 
+  box-shadow: inset 0 0 2px rgba(0,0,0,.1);
+}
+
+input:-moz-placeholder,textarea:-moz-placeholder{ font-size: 12px; font-style: italic; color: #ccc;}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{ font-size: 12px; font-style: italic; color: #ccc;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{ font-size: 12px; font-style: italic; color: #ccc;}
+
+/*** Layout *************************************************************/
+#description, #app-shots, #site-testimonials, #steps, #features, #screenshots, #user-testimonials, #screencast, #subscribe, #buy-buttons, #footer  {
+  min-height: 20px;
+  padding: 50px 0;
+}
+
+.row-fluid .span6:nth-of-type(2n+1) { margin-left: 0;}
+  
+/*** Header *************************************************************/
+.header {
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+  width: 100%;
+}
+
+/* navbar */
+.navbar {
+  margin-bottom: 100px;
+}
+
+.navbar .container {
+  padding: 0 30px;
+}
+
+.navbar-inner {
+  min-height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fff;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+  border: 1px solid rgb(212, 212, 212);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+/* navbar logo */
+.navbar .brand {
+  font-weight: 400;
+}
+
+.nav li a {
+  position: relative;
+}
+
+/* navbar circle notification */
+.nav li a span{
+  position: absolute;
+  color: #fff;
+  font-size: 8px;
+  top: 2px;
+  right: 4px;
+  background: rgb(0, 208, 248);
+  border: 1px solid rgb(0, 208, 248);
+  box-shadow: inset 0 1px 1px rgb(255, 255, 255);
+  border-radius: 100%;
+  padding: 0 5px;
+  z-index: 9;
+}
+
+.navbar .nav>li>a {
+  padding: 10px 31px 10px;
+}
+
+/* header description */
+.header .span7 {
+  padding-left: 100px;
+}
+
+.header-description h1 {  
+  color: #fff;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.33);
+}
+
+/* header button - call to action button */
+.app-store-button-wrapper {
+  margin: 150px 0 0;
+  border: solid 1px rgba(0,0,0,.25);
+  display: inline-block;
+  padding: 12px;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  border-radius: 5px;     
+  -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.34), inset 0 2px 15px 1px rgba(0, 0, 0, .2); 
+  -moz-box-shadow: 0 1px rgba(255, 255, 255, 0.34), inset 0 2px 15px 1px rgba(0, 0, 0, .2); 
+  box-shadow: 0 1px rgba(255, 255, 255, 0.34), inset 0 2px 15px 1px rgba(0, 0, 0, .2); 
+}
+
+.apple-version  {
+  padding: 20px 40px;
+  font-size: 20px;
+}
+
+.apple-version  i {
+  padding-right: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.android-version a{
+  font-size: 11px;
+  color: #fff;
+  margin-left: 97px;
+  margin-top: 21px;
+}
+
+/* galaxy */
+.galaxy {
+  background: url(/assets/galaxy.png);
+ width: 298px;
+  height: 547px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.galaxy-slider {
+  width: 218px;
+  margin: 73px 42px 0;
+  height: 388px;
+  position: absolute;
+  background: rgb(115, 115, 215);
+}
+
+/*** Section -> Descrption ******************************************************/
+.description {
+  position: relative;
+}
+
+.description h2 {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.description:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: url(/assets/top-description-pattern.png);
+  top: -8px;
+  left: 0;
+  z-index: 99;
+}
+
+.description:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: url(/assets/bottom-description-pattern.png);
+  bottom: -8px;
+  left: 0;
+  z-index: 99;
+}
+
+/*** Section -> App-shots ****************************************************/
+.app-shots {
+  background: url(/assets/app-shots-pattern.png) repeat;
+}
+
+.app-shots ul li img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.app-shots ul li {
+  background-color: #fff; 
+  border: solid 3px rgba(0,0,0,.35);
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  border-radius: 5px; 
+  -webkit-box-shadow: 0 3px 3px #fff, inset 0 1px 3px rgba(255,255,255,.76); 
+  -moz-box-shadow: 0 3px 3px #fff, inset 0 1px 3px rgba(255,255,255,.76); 
+  box-shadow: 0 3px 3px #fff, inset 0 1px 3px rgba(255,255,255,.76); 
+}
+ 
+/*** Section -> Site-testimonials **********************************************/
+.site-testimonials .container {
+  max-width: 800px;
+}
+
+.site-testimonials {
+  padding-bottom: 80px !important;
+}
+
+.site-testimonials img{
+  padding-right: 20px;
+}
+
+.site-testimonials p{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+  top: auto;
+  right: 0;
+  left: 48%;
+}
+
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 18px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background: url(/assets/pagination.png) 19px;
+  border-radius: 5px;
+}
+
+.carousel-indicators li:hover {
+  cursor: pointer;
+}
+
+.carousel-indicators li.active {
+  background: url(/assets/pagination.png) 1px;
+}
+
+
+/*** Section -> Steps *****************************************************/
+.steps article {
+  padding: 0 40px;
+}
+
+.steps article i {
+  font-size: 70px;
+}
+
+/*** Section -> Features **************************************************/
+.features article {  
+  padding: 0 50px 20px;
+}
+
+.features article i {  
+  font-size: 31px;
+}
+
+/*** Section -> Screenshots ************************************************/
+.screenshots .container{
+  padding: 0 150px;
+}
+
+.nav-tabs > li, .nav-pills > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+  text-align:center;
+}
+
+.screenshots img { 
+  border: solid 4px #fff;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,1,.65), inset 0 0 11px rgba(0,0,1,.75); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,1,.65), inset 0 0 11px rgba(0,0,1,.75); 
+  box-shadow: 0 0 5px rgba(0,0,1,.65), inset 0 0 11px rgba(0,0,1,.75);
+}
+
+/*** Section -> User-testimonials *******************************************/
+.user-testimonials img {
+  margin-right: 20px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.8), inset 0 0 16px rgba(255,255,255,.47); 
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.8), inset 0 0 16px rgba(255,255,255,.47); 
+  box-shadow: 0 1px 3px rgba(0,0,0,.8), inset 0 0 16px rgba(255,255,255,.47);
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 0px solid rgb(238, 238, 238);
+}
+
+blockquote p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+blockquote small {
+  float: right;
+}
+
+/*** Section -> Screencast *****************************************************/
+.screencast .span8{
+  display: inline-block;
+  float: none;
+}
+
+/*** Section -> Subscribe ******************************************************/
+.help-inline {
+  padding-right: 20px;
+  font-size: 30px;
+  vertical-align: baseline;
+}
+
+.subscribe input{
+  border: 1px solid rgb(209, 209, 209);
+  height: 42px;
+  width: 322px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.btn-info {
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+/*** Section -> Buy-button ******************************************************/
+.buy-buttons a {
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*** Footer *********************************************************************/
+.footer {
+  background: rgb(54, 54, 54);
+  color: #fff;
+}
+
+a.footer-logo{
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+a.footer-logo:hover{
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  color: rgba(255, 255, 255, 0.14);
+}
+
+a.footer-logo i{
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  color: rgba(255, 255, 255, 0.14);
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  -ms-transition: color 300ms ease;
+  -o-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+a.footer-logo:hover i{
+  color: #fff;
+}
+
+p.footer-follow{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* social icons */
+.social-icons a{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+/* site map */
+.site-map a, .copyright a{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.site-map a:hover, .social-icons a:hover, .copyright a:hover{
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  color: rgba(255, 255, 255, 0.14);
+}
+
+.copyright {
+  margin-top: 100px;
+}
+
+/*** Contact Form *************************************************************/
+.contact-form-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  z-index: 999;
+} 
+
+.contact-btn {
+  padding: 10px 20px 10px;
+  background: rgb(57, 57, 57);
+  display: inline-block;
+  margin-bottom: 0;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+} 
+
+.contact-form-inner {
+  padding: 20px 20px 10px;
+  background: rgb(57, 57, 57);
+  display: none;
+} 
+
+.contact-form {
+  width: 300px;
+}
+
+form {
+  margin-bottom: 0;
+} 
+
+/*** Pages -> All Pages ***********************************************************/
+.header.page .navbar {
+  margin-bottom: 30px;
+}
+
+.header.page .app-store-buttons{
+  margin-top: 22px;
+  margin-bottom: 50px;
+}
+
+.page-content {
+  margin: 50px 0;
+}
+
+/*** Pages -> Blog ****************************************************************/
+.blog-post {
+  margin-bottom: 50px;
+}
+
+.blog-post img {
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.blog-post p {
+  margin-bottom: 20px;
+}
+
+.meta-tags {
+  margin: 10px auto 15px;
+}
+
+.meta-tags a{
+  margin-right: 10px;
+  font-size: 12px;
+  background: rgb(238, 238, 238);
+  padding: 5px 10px;
+  line-height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*** Pages -> About **************************************************************/
+p.about-page {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: rgb(155, 155, 155);
+}
+ 
+.team-members {
+  padding: 50px 0;
+  background: rgb(108, 191, 238);
+}
+
+ul.members li img{
+  border-radius: 5px;
+  width: 110px;
+  height: 110px;
+  border: 2px solid rgb(165, 223, 255);
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+  -moz-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+  -ms-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+  -o-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.38);
+}
+
+ul.members li span{
+  margin: 13px 0;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+ul.members li a{
+  padding: 4px 10px;
+  color: rgb(255, 255, 255);
+}
+
+/*** Utilities ********************************************************************/
+.divider {
+  border-bottom: 1px dashed #d7d7d7;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.divider-2 {
+  border-bottom: 1px solid rgb(238, 238, 238);
+  max-width: 960px;
+  margin: 0 auto 10px;
+}
+
+/*** Responsive Fixes **************************************************************/
+/* Large desktop */
+@media (min-width: 1200px) {  }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  body { padding: 0; }
+  
+  .container { padding-left: 20px; padding-right: 20px; }
+  
+  .header { text-align: center; }
+  
+  .navbar { margin-bottom: 55px; }
+  
+  .navbar .nav, .navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+  }
+
+  .navbar-inner { text-align:center; }
+  
+  .navbar .brand { text-align: center; float: none; }
+  
+  .header .span7 { padding-left: 0; }
+  
+  .app-store-button-wrapper { margin: 55px 0 0; }
+  
+  .apple-version { padding: 15px 20px; font-size: 16px; }
+
+  .apple-version i { font-size: 23px; }
+  
+  .android-version a { margin-left: 0; }
+  
+  .galaxy { margin-top: 20px; }
+  
+  .app-shots .span3 { margin-bottom: 20px; }
+  
+  .screenshots .container{ padding: 0 10px; }
+  
+  .user-testimonials .span4 { margin-bottom: 20px; display: inline-block; }
+  
+  .subsc-form .help-inline { font-size: 20px; margin-bottom: 20px; }
+  
+  .subscribe input { width: 266px; }
+  
+  .buy-buttons a { margin-bottom: 20px; }
+  
+  .footer  div  div { margin-bottom: 50px; text-align: center; }
+  
+  .contact-form-inner{ margin-bottom: 0 !important; }
+  
+  .copyright { margin-top: 0; }
+  
+  .header.page { text-align: center; }
+  
+  .header-description, .app-store-buttons { float: none !important; }
+  
+  .header.page .app-store-buttons a{ margin-bottom: 20px; }
+  
+  .members li { margin-bottom: 20px; }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+  .contact-form { width: 200px;}
+}
+
+@media (max-width: 320px) { 
+  .galaxy {  margin-left: -18px; }
+}
