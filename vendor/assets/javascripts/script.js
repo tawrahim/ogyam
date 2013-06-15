@@ -1,22 +1,13 @@
 /*
- * All the plugins init are in this file
- *
+ * Ogyam! (c) 2013
+ * 
  */
-var map;
+
 $(document).ready(function() {
 
-  // Scroll to top
-  $.scrollUp({
-     scrollText: '', // Text for element
-  });
-  
   // activate carousels
   $('#mobile-carousel').carousel();
   $('#testimonials-carousel').carousel();
-  
-  // init fitvids plugin
-  $(".video").fitVids();
-
   
   // sliding contact form
   $('.contact-btn').click( function(){
