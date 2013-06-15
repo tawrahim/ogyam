@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	/Users/tawheedabdul-raheem/2013/Rails/ogyam/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Ogyam
+ApplicationController	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateUsers	/Users/tawheedabdul-raheem/2013/Rails/ogyam/db/migrate/20130615142132_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Ogyam	/Users/tawheedabdul-raheem/2013/Rails/ogyam/config/application.rb	/^module Ogyam$/;"	m
+StaticPagesController	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^class StaticPagesController < ApplicationController$/;"	c
+StaticPagesHelper	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/helpers/static_pages_helper.rb	/^module StaticPagesHelper$/;"	m
+User	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UsersController	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersHelper	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+about	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def about$/;"	f	class:StaticPagesController
+blog	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def blog$/;"	f	class:StaticPagesController
+change	/Users/tawheedabdul-raheem/2013/Rails/ogyam/db/migrate/20130615142132_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+full_title	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/helpers/application_helper.rb	/^    def full_title(page_title)$/;"	f	class:ApplicationHelper
+help	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def help$/;"	f	class:StaticPagesController
+home	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def home$/;"	f	class:StaticPagesController
+new	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+press	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def press$/;"	f	class:StaticPagesController
+terms	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def terms$/;"	f	class:StaticPagesController
