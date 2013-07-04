@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
       #default_url = "#{root_url}assets/rails.png"
       default_url = "https://still-shore-2532.herokuapp.com/assets/avatar.png"
       gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
-      gravatar_url = "http://gravatar.com/avatar/#{gravatar_id}.png?s=52&d=#{CGI.escape(default_url)}" 
+      gravatar_url = "http://gravatar.com/avatar/#{gravatar_id}.png?s=44&d=#{CGI.escape(default_url)}" 
     end
 
     def add_gravatar
