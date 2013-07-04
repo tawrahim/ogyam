@@ -3,7 +3,6 @@
  * Author URL: http://www.ogyam.com
  * All Right Reserved
  */
- 
 
  
 /*** Google Font **************************************************************/
@@ -676,4 +675,22 @@ ul.members li a{
 
 @media (max-width: 320px) { 
   .galaxy {  margin-left: -18px; }
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 50px 10px 10px -5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 20px 18px 0;
+  }
 }
