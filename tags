@@ -24,9 +24,10 @@ change	/Users/tawheedabdul-raheem/2013/Rails/ogyam/db/migrate/20130615142132_cre
 change	/Users/tawheedabdul-raheem/2013/Rails/ogyam/db/migrate/20130615153321_add_index_to_users_email.rb	/^  def change$/;"	f	class:AddIndexToUsersEmail
 change	/Users/tawheedabdul-raheem/2013/Rails/ogyam/db/migrate/20130615155019_add_password_digest_to_users.rb	/^  def change$/;"	f	class:AddPasswordDigestToUsers
 change	/Users/tawheedabdul-raheem/2013/Rails/ogyam/db/migrate/20130616134519_add_background_image_url_to_users.rb	/^  def change$/;"	f	class:AddBackgroundImageUrlToUsers
+create	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
 downcase_email	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/models/user.rb	/^    def downcase_email$/;"	f	class:User
 full_title	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/helpers/application_helper.rb	/^    def full_title(page_title)$/;"	f	class:ApplicationHelper
-gravatar_for	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/helpers/users_helper.rb	/^  def gravatar_for(user)$/;"	f	class:UsersHelper
+gravatar_for	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/models/user.rb	/^    def gravatar_for(user)$/;"	f	class:User
 help	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def help$/;"	f	class:StaticPagesController
 home	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/static_pages_controller.rb	/^  def home$/;"	f	class:StaticPagesController
 new	/Users/tawheedabdul-raheem/2013/Rails/ogyam/app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
