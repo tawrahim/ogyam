@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
 
   before_save :downcase_email 
   before_save :add_gravatar
+  before_save :create_remember_token
 
   VALID_REGEX = /\A[\w+@\-.]+@[a-z\d\-.]+\.[a-z]+\z/i 
   validates :name, presence: true, length: { maximum: 50 }
@@ -31,6 +32,10 @@ class User < ActiveRecord::Base
 
     def add_gravatar
       self.image_url = gravatar_for(self) 
+    end
+
+    def create_remember_token
+      self.remember_token = SecureRandom.urlsafe_base64 
     end
 end
 
