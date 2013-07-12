@@ -1,8 +1,8 @@
 ---
 app-shots-pattern.png: app-shots-pattern-74f83f7cee0dee64e7a5ecbfdf2fbc67.png
 app-shots-pattern/index.png: app-shots-pattern-74f83f7cee0dee64e7a5ecbfdf2fbc67.png
-avatar.png: avatar-17b388e9a6ac022f4baa71e6344d63cb.png
-avatar/index.png: avatar-17b388e9a6ac022f4baa71e6344d63cb.png
+avatar.png: avatar-a000c701377a1e44734f3bee68b9b907.png
+avatar/index.png: avatar-a000c701377a1e44734f3bee68b9b907.png
 bg.jpg: bg-e351ecaecc668a436e7df1e899acc96e.jpg
 bg/index.jpg: bg-e351ecaecc668a436e7df1e899acc96e.jpg
 bottom-description-pattern.png: bottom-description-pattern-807543733ab6b702897fb8b2bb4e735a.png
@@ -53,10 +53,12 @@ user.jpg: user-20b54c02f3abfbe2841802654be0273d.jpg
 user/index.jpg: user-20b54c02f3abfbe2841802654be0273d.jpg
 user1.JPG: user1-1b812a0ac9eecd9fe1307bee211bc209.JPG
 user1/index.JPG: user1-1b812a0ac9eecd9fe1307bee211bc209.JPG
-application.js: application-d3d5bced5d357b4b5851518e43e3b0e9.js
-application/index.js: application-d3d5bced5d357b4b5851518e43e3b0e9.js
+application.js: application-e183379cc989c54d925a82f8e224b538.js
+application/index.js: application-e183379cc989c54d925a82f8e224b538.js
 application.css: application-22b3e112e151eace6c26e061d5da9132.css
 application/index.css: application-22b3e112e151eace6c26e061d5da9132.css
+boot.css: boot-f8a9ff799a601b53a83023ab849d6fec.css
+boot/index.css: boot-f8a9ff799a601b53a83023ab849d6fec.css
 font/FontAwesome.otf: font/FontAwesome-468f83b63df32064983141584a19ff17.otf
 font/FontAwesome/index.otf: font/FontAwesome-468f83b63df32064983141584a19ff17.otf
 font/corp/fontawesome-corp-webfont.eot: font/corp/fontawesome-corp-webfont-236aeb614ebd9d4b8ab24d2ab42b52a6.eot
