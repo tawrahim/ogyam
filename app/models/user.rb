@@ -23,8 +23,6 @@ class User < ActiveRecord::Base
     end
 
     def gravatar_for(user)
-      # The default url has been hard coded here, this very bad but would fix it later
-      #default_url = "#{root_url}assets/rails.png"
       default_url = "https://still-shore-2532.herokuapp.com/assets/avatar.png"
       gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
       gravatar_url = "http://gravatar.com/avatar/#{gravatar_id}.png?s=44&d=#{CGI.escape(default_url)}" 

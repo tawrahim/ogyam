@@ -1,0 +1,9 @@
+</header>
+<% provide(:title, 'All Users') %>
+<h1>All Users</h1>
+
+<ul class="users">
+   <% User.all.each do |user| %>
+     <%= render user %>
+   <% end %>
+</ul>
