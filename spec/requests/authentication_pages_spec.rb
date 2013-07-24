@@ -126,4 +126,14 @@ describe "AuthenticationPages" do
       end
     end
   end
+
+
+  describe "sending password reset mail" do
+    it "should visit the reset path"
+    it "should have a reset page"
+    it "should have an edit page "    
+    it "should have the right title"
+    it "should should a reset email"
+    it "redirect to root path after sending email"
+  end
 end

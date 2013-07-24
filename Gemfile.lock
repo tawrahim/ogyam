@@ -246,6 +246,7 @@ DEPENDENCIES
   guard-rspec (= 1.2.1)
   guard-spork (= 1.2.0)
   jquery-rails (= 2.0.2)
+  mail (= 2.5.4)
   omniauth-facebook
   omniauth-twitter
   pg (= 0.12.2)

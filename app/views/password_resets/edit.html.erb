@@ -1,0 +1,14 @@
+</header>
+<%= form_for @user, :url => password_reset_path(params[:id]) do |f| %>
+  <div class="field">
+    <%= f.password_field(:password, placeholder: "password", class: "login password-field")  %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field(:password_confirmation, placeholder: "retype password", class: "login password-field")  %>
+  </div>
+
+  <div>
+    <%= f.submit("Reset password", class: "", class: "button btn btn-large") %>   
+  </div>
+<% end %>

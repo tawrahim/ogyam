@@ -8,6 +8,7 @@ gem 'figaro'
 gem 'jquery-rails', '2.0.2'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem "mail", "2.5.4"
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

@@ -1,6 +1,4 @@
 class User < ActiveRecord::Base
-  include Rails.application.routes.url_helpers
-
   attr_accessible :bio, :email, :image_url, :location, :name,
     :password, :password_confirmation
   
@@ -16,6 +14,13 @@ class User < ActiveRecord::Base
     uniqueness: { case_sensitive: false }
   validates :password, length: { minimum: 6 }
   validates :password_digest, presence: true
+
+  def send_password_reset
+    self.password_reset_token = SecureRandom.urlsafe_base64
+    self.password_reset_sent_at = Time.zone.now
+    self.save!(validate: false)
+    UserMailer.password_reset(self).deliver  
+  end
 
   private
     def downcase_email

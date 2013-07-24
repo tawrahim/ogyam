@@ -85,6 +85,8 @@ describe "UserPages" do
         expect { click_button submit }.to change(User, :count).by(1)
       end
 
+      it "should send the user an email"
+
       describe "after saving a user"  do
 
         before { click_button submit }

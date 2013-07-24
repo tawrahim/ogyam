@@ -21,6 +21,7 @@ class UsersController < ApplicationController
       sign_in @user 
       flash[:success] = "Welcome to Ogyam"
       redirect_to @user
+      UserMailer.registration_confirmation(@user).deliver
     else
       render 'new'
     end
