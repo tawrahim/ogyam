@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130719155128) do
+ActiveRecord::Schema.define(:version => 20130724040921) do
+
+  create_table "goals", :force => true do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "goals", ["user_id", "created_at"], :name => "index_goals_on_user_id_and_created_at"
+
+  create_table "motivations", :force => true do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.integer  "motivated_user", :limit => 255
+  end
+
+  add_index "motivations", ["user_id", "created_at"], :name => "index_motivations_on_user_id_and_created_at"
 
   create_table "users", :force => true do |t|
     t.string   "name"

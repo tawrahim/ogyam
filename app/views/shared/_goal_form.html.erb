@@ -1,0 +1,7 @@
+<%= form_for(@goal) do |f| %>
+  <div class="field">
+  <%= render 'shared/error_messages', object: @goal %>
+    <%= f.text_area :content, placeholder: "New goal" %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

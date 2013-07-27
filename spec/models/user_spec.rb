@@ -19,6 +19,8 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:goals) }
+  it { should respond_to(:feed) }
 
   it { should be_valid }
   it { should_not be_admin }
@@ -108,5 +110,39 @@ describe User do
     it "should have a nonblank remeber token" do
       subject.remember_token.should_not be_blank
     end 
+  end
+
+  describe "goals association" do
+    
+    before { @user.save }
+    let!(:older_goal) do
+      FactoryGirl.create(:goal, user: @user, created_at: 1.day.ago)
+    end
+
+    let!(:newer_goal) do
+      FactoryGirl.create(:goal, user: @user, created_at: 1.hour.ago)
+    end
+
+    it "should have the right order" do
+      @user.goals.should == [newer_goal, older_goal]  
+    end
+
+    it "should destroy associated goals" do
+      goals = @user.goals
+      @user.destroy
+      goals.each do |goal|
+        Goal.find_by_id(goal.id).should be_nil
+      end
+    end
+
+    describe "status feed" do
+      let(:unfollowed_post) do
+        FactoryGirl.create(:goal, user: FactoryGirl.create(:user))
+      end
+
+      its(:feed) { should include(newer_goal) }
+      its(:feed) { should include(older_goal) }
+      its(:feed) { should_not include(unfollowed_post) }
+    end
   end
 end

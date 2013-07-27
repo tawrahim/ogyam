@@ -9,4 +9,9 @@ FactoryGirl.define do
       admin true
     end
   end
+
+  factory :goal do
+    content "Lorem est laborum."
+    user
+  end
 end

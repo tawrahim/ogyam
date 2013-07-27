@@ -48,9 +48,19 @@ describe "UserPages" do
 
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
+    let!(:goal1) { FactoryGirl.create(:goal, user: user, content: "Foo")  }
+    let!(:goal2) { FactoryGirl.create(:goal, user: user, content: "Foo bar baz")  }
+
     before { visit user_path(user) }
 
     it { should have_selector('title', text: user.name) }
+    it { should have_selector('h3',    text: user.name) }
+
+    describe "goals" do
+      it { should have_content(goal1.content) }
+      it { should have_content(goal2.content) }
+      it { should have_content(user.goals.count) }
+    end
   end
 
   describe "signup" do

@@ -8,6 +8,22 @@ describe "Static Pages" do
     before { visit root_path} 
 
     it { should have_selector('title', text: full_title('')) }
+
+    describe "for signed in users" do
+      let(:user) { FactoryGirl.create(:user) }
+      before do
+        FactoryGirl.create(:goal, user: user, content: "Lorem ipsum")
+        FactoryGirl.create(:goal, user: user, content: "Dolor sit amet")
+        sign_in user
+        visit root_path
+      end
+
+      it "should render ther user's feed" do
+        user.feed.each do |item|
+          page.should have_selector("#{item.id}", text: item.content)
+        end
+      end
+    end
   end
 
   describe "About Page" do

@@ -2,6 +2,9 @@ class User < ActiveRecord::Base
   attr_accessible :bio, :email, :image_url, :location, :name,
     :password, :password_confirmation
   
+  has_many :goals, dependent: :destroy
+  has_many :motivations
+
   has_secure_password
 
   before_save :downcase_email 
@@ -20,6 +23,10 @@ class User < ActiveRecord::Base
     self.password_reset_sent_at = Time.zone.now
     self.save!(validate: false)
     UserMailer.password_reset(self).deliver  
+  end
+  
+  def feed
+    Goal.where("user_id = ?", self.id)
   end
 
   private
